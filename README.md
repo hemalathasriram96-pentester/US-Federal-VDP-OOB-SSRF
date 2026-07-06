@@ -9,7 +9,7 @@ Discovered an Out-of-Band Server-Side Request Forgery (SSRF) vulnerability in a 
 - **Target:** `*.gov` (Redacted)
 - **Vulnerability Type:** Server-Side Request Forgery (SSRF)
 - **CWE:** CWE-918
-- **Severity:** High / Critical
+- **Severity:** P5 - Informational (Valid Finding)
 
 ## High-Level Walkthrough
 1. Located an AJAX endpoint processing requests via a legacy Perl script.
@@ -18,7 +18,7 @@ Discovered an Out-of-Band Server-Side Request Forgery (SSRF) vulnerability in a 
 4. Received an HTTP/DNS interaction on my external listener, confirming Out-of-Band SSRF.
 
 ## Impact
-An attacker could abuse this functionality to scan internal infrastructure, access cloud metadata services (IMDS), or perform unauthorized internal actions from the trusted asset's IP.
+While categorized under the P5 baseline due to strict adherence to scope rules and avoiding further internal exploitation, this setup validates that unvalidated arguments in legacy Perl scripts can be leveraged to initiate outbound requests.
 
 ## Current Progress
 Reported via Official Channels ➔ Acknowledged ➔ **Under Mitigation (In Progress)**
