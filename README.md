@@ -1,9 +1,13 @@
-# US Federal Agency VDP - Out-of-Band Server-Side Request Forgery (OOB-SSRF)
+# Federal Agency VDP - Out-of-Band Server-Side Request Forgery (OOB-SSRF)
 
 ## Executive Summary
-Discovered an Out-of-Band Server-Side Request Forgery (SSRF) vulnerability in a US Federal Agency web application via an AJAX Perl script. By manipulating specific arguments, I was able to force the server to initiate outbound connections to an external server under my control.
+Discovered an Out-of-Band Server-Side Request Forgery (SSRF) vulnerability in a Federal Agency web application via an AJAX Perl script. By manipulating specific arguments, I was able to force the server to initiate outbound connections to an external server under my control.
 
 > ⚠️ **Status:** In Progress / Under Mitigation. Specific endpoints, organizations, and parameters have been redacted to comply with Responsible Disclosure Guidelines.
+
+<img width="860" height="479" alt="Screenshot from 2026-09-02 22-29-57" src="https://github.com/user-attachments/assets/ef87e21d-2baa-477b-ae20-8357596a0d0c" />
+
+<img width="860" height="479" alt="Screenshot from 2026-09-02 22-30-17" src="https://github.com/user-attachments/assets/15c2e05f-d45b-4094-a912-4b8f17c7ba85" />
 
 ## Vulnerability Details
 - **Target:** `*.gov` (Redacted)
